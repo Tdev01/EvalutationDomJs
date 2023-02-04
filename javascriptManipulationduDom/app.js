@@ -76,7 +76,7 @@ Menu5.addEventListener("click", function () {
 
 //..........................ContainerMenu1..........................
 //recupération du dom    
-let images = document.getElementById("avatar");
+let images = document.getElementById("l1");
 //     //initialisation tableau vide    
     let links = [];
 //     //boucle pour envoyer les liens dans le tableau    
@@ -91,47 +91,43 @@ let images = document.getElementById("avatar");
 //     //fonction d'apparition et de changement d'image au survol    
     function mouseOver() {
 //         //apparition de l'image        
-        images.style.transition = "all 0.5s ease-in-out";
         images.style.visibility = "visible";
 //         //vérification du link survolé et changement de src de l'image        
         switch(this.id) {
             case "l1":
-                images.src = "/assets_img/lapin.png"               
+                images.src = "./ressource/facebook.png"               
                  break;
             case "l2":
-                images.src= "/assets_img/aigle.png"                
+                images.src= ""                
                 break;
             case "l3":
-                images.src = "/assets_img/chat.webp"                
+                images.src = ""                
                 break;
             case "l4":
-                images.src = "/assets_img/chien.png"                
+                images.src = ""                
                 break;
             case "l5":
-                images.src = "/assets_img/cochon.png"                
+                images.src = ""                
                 break;
             case "l6":
-                images.src = "/assets_img/demon.png"                
+                images.src = ""                
                 break;
             case "l7":
-                images.src = "/assets_img/king.png"                
+                images.src = ""                
                 break;
             case "l8":
-                images.src = "/assets_img/vache.png"                
+                images.src = ""                
                 break;
             default:
-                images.src = "/assets_img/zombie.png"        
+                images.src = ""        
           }
     };
 //     //fonction de disparition après survol     
-    function mouseOut() {
-        images.style.visibility = "hidden";
-    };
-// // faire un tableauxqui recupère 
+  function mouseOut() {images.style.visibility = "hidden";};
 // // faire une function  qui permet de faire l'évenement mouseover
-link1.addEventListener('mouseover', function () {
+images.addEventListener('mouseover', function () {
   
-})
+});
 
 
 //..........................ContainerMenu2..........................
