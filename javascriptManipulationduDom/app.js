@@ -77,23 +77,23 @@ Menu5.addEventListener("click", function () {
 //..........................ContainerMenu1..........................
 //recupération du dom    
 let images = document.getElementById("l1");
-//     //initialisation tableau vide    
+//initialisation tableau vide    
     let links = [];
 //     //boucle pour envoyer les liens dans le tableau    
     for (let i = 1; i <= 9; i++){
       links.push(document.getElementById("l" + i));
     }
-//     //boucle pour appliquer la fonction d'écoute à tous les liens    
+//boucle pour appliquer la fonction d'écoute à tous les liens    
     for (let i = 0; i < 9; i++){
         links[i].addEventListener("mouseover", mouseOver);
         links[i].addEventListener("mouseout", mouseOut);
     }
-//     //fonction d'apparition et de changement d'image au survol    
+//fonction d'apparition et de changement d'image au survol    
     function mouseOver() {
-//         //apparition de l'image        
-        images.style.visibility = "visible";
-//         //vérification du link survolé et changement de src de l'image        
-        switch(this.id) {
+//apparition de l'image        
+      images.style.visibility = "visible";
+//vérification du link survolé et changement de src de l'image        
+      switch(this.id) {
             case "l1":
                 images.src = "./ressource/facebook.png"               
                  break;
@@ -121,16 +121,19 @@ let images = document.getElementById("l1");
             default:
                 images.src = ""        
           }
-    };
-//     //fonction de disparition après survol     
-  function mouseOut() {images.style.visibility = "hidden";};
-// // faire une function  qui permet de faire l'évenement mouseover
-images.addEventListener('mouseover', function () {
+};
+//fonction de disparition après survol     
+function mouseOut() {images.style.visibility = "hidden";};
+// faire une function  qui permet de faire l'évenement mouseover
+  links.addEventListener('mouseover', function () {
   
-});
+})
 
 
 //..........................ContainerMenu2..........................
+
+
+
 
 //..........................ContainerMenu3..........................
 function colortext(){
